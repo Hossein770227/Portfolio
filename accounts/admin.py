@@ -5,10 +5,10 @@ from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 
 
 from .forms import UserCreationForm, UserChangeForm
-from .models import MyUser
+from .models import MyUser, OtpCode
 
 
-
+@admin.register(MyUser)
 class UserAdmin(BaseUserAdmin):
     form = UserChangeForm
     add_form = UserCreationForm
@@ -35,8 +35,10 @@ class UserAdmin(BaseUserAdmin):
     list_per_page=10
     filter_horizontal = []
 
+@admin.register(OtpCode)
+class OtpCodeAdmin(admin.ModelAdmin):
+    list_display=['phone_number', 'code', 'date_time_created']
 
 
-admin.site.register(MyUser, UserAdmin)
 admin.site.unregister(Group)
 
