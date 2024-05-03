@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser
 from django.utils.translation import gettext_lazy as _
+from django.utils import timezone
 
 from .managers import MyUserManager
 
@@ -18,7 +19,7 @@ class MyUser(AbstractBaseUser):
     REQUIRED_FIELDS =['first_name', 'last_name']
     
     def __str__(self):
-        return self.username
+        return f"{self.first_name} {self.last_name}"
 
     def has_perm(self, perm, obj=None):
         return True
@@ -33,3 +34,11 @@ class MyUser(AbstractBaseUser):
     @property
     def is_superuser(self):
         return True
+
+class OtpCode(models.Model):
+    phone_number = models.CharField(max_length=11)
+    code = models.PositiveSmallIntegerField()
+    date_time_created = models.DateTimeField(auto_now_add=timezone.now())
+
+    def __str__(self):
+        return f'{self.phone_number}:{self.code}'
