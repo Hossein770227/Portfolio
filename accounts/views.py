@@ -65,12 +65,24 @@ class UserRegisterCodeView(View):
                 return redirect ('accounts:verify_code')
             
             if cd['code']==code_instance.code:
-                user=MyUser.objects.create_user(user_session['phone_number'], user_session['username'], user_session['password'])
+                user=MyUser.objects.create_user(user_session['first_name'],user_session['last_name'],user_session['phone_number'], user_session['password'])
                 code_instance.delete()
                 messages.success(request, _('you register'))
                 login(request, user)
-                return redirect('products:product_list')
+                return redirect('pages:home')
             else:
                 messages.error(request, _('this code is wrong'))
                 return redirect('accounts:verify_code')
         return redirect('pages:home')
+
+
+def login_view(request):
+    if request.method =='POST':
+        form = AuthenticationForm(data=request.POST)
+        if form.is_valid():
+            user =form.get_user()
+            login(request, user)
+            messages.success(request, _('you successfully login'))
+            return redirect('pages:home')
+    form = AuthenticationForm()
+    return render(request, 'registration/login.html', {'form':form})
