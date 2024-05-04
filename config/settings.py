@@ -47,6 +47,8 @@ INSTALLED_APPS = [
 
     # third party app
     "rosetta",
+    'crispy_bootstrap4',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -132,7 +134,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATICFILES_DIRS=[str(BASE_DIR.joinpath('static'))]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
@@ -151,3 +154,7 @@ LANGUAGES =(
     ('en', 'English'),
     ('fa', 'persion'),
 )
+
+# crispy config 
+
+CRISPY_TEMPLATE_PACK='bootstrap4'

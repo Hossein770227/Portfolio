@@ -92,4 +92,4 @@ def logout_view(request):
     if request.method =='POST':
         logout(request)
         messages.error(request, _('you successfully logouted'))
-        return redirect('products:product_list'
+        return redirect('pages:home')
