@@ -1,12 +1,111 @@
+{% load static %}
+{% load i18n %}
 <!DOCTYPE html>
-<html>
-    <head>
-    <title>{% block page_title %}{% endblock page_title %}</title>
-    </head>
-<body>
+<html lang="fa" class="no-js">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<title>{% block page_title %}{% endblock page_title %}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		
+		<link rel="shortcut icon" href="{% static "images/favicon.png" %}">
 
-    {% block content %}
-    {% endblock content %}
-    {% include "messages.html" %}
-</body>
+		<link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}" type="text/css">
+		<link rel="stylesheet" href="{% static "css/normalize.css" %}" type="text/css">
+		<link rel="stylesheet" href="{% static "css/animate.css" %}" type="text/css">
+		<link rel="stylesheet" href="{% static "css/transition-animations.css" %}" type="text/css">
+		<link rel="stylesheet" href="{% static "css/owl.carousel.css" %}" type="text/css">
+		<link rel="stylesheet" href="{% static "css/magnific-popup.css" %}" type="text/css">
+		<link rel="stylesheet" href="{% static "css/main-green.css" %}" type="text/css">
+
+		<!-- This styles needs for demo -->
+		<link rel="stylesheet" href="{% static "preview/lmpixels-demo-panel.css" %}" type="text/css">
+		<!-- /This styles needs for demo -->
+
+		<script src="{% static "js/jquery-2.1.3.min.js" %}"></script>
+		<script src="{% static "js/modernizr.custom.js" %}"></script>
+		<!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
+	</head>
+
+	<body class="material-template">
+		{% comment %} <!-- Loading animation -->
+		<div class="preloader">
+			<div class="preloader-animation">
+				<div class="preloader-spinner">
+				</div>
+			</div>
+		</div>
+		<!-- /Loading animation --> {% endcomment %}
+
+		<div id="page" class="page">
+			<!-- Header -->
+			<header id="site_header" class="header mobile-menu-hide">
+				<div class="header-content">
+					<div class="site-title-block mobile-hidden">
+						<div class="site-title">حسین  <span>هادی امانی </span></div>
+					</div>
+
+					<!-- Navigation -->
+					<div class="site-nav">
+						<!-- Main menu -->
+						<ul id="nav" class="site-main-menu">
+							<li>
+								<a class="pt-trigger" href="#home">{% trans "home" %}</a><!-- href value = data-id without # of .pt-page. -->
+							</li>
+							<li>
+								<a class="pt-trigger" href="#resume">{% trans "Rezomeh" %}</a>
+							</li>
+							<li>
+								<a class="pt-trigger" href="#portfolio">{% trans "Portfolios" %}</a>
+							</li>
+							<li>
+								<a class="pt-trigger" href="#contact">{% trans "call" %}</a>
+							</li>
+						</ul>
+						<!-- /Main menu -->
+					</div>
+					<!-- Navigation -->
+				</div>
+			</header>
+			<!-- /Header -->
+			{% block content %}
+			{% endblock content %}
+
+		<!-- Demo Color changer -->
+		<a id="lm_demo_panel_switcher" class="lm-demo-panel-switcher right"><i class="fa fa-gear"></i></a>
+		<div id="lm_demo_panel" class="lm-demo-panel right panel-color-red active">
+			<div class="demo-panel-title">{% trans "main color" %}</div>
+			<div id="main_color" class="demo-panel-options">
+				<a data-id="deep-purple"><div class="preview color-1">&nbsp;</div></a>
+				<a data-id="red"><div class="preview color-2">&nbsp;</div></a>
+				<a data-id="blue"><div class="preview color-3">&nbsp;</div></a>
+				<a data-id="deep-orange"><div class="preview color-4">&nbsp;</div></a>
+				<a data-id="green" class="current-main-color"><div class="preview color-5">&nbsp;</div></a>
+				<a data-id="light-blue"><div class="preview color-6">&nbsp;</div></a>
+				<a data-id="pink"><div class="preview color-7">&nbsp;</div></a>
+				<a data-id="purple"><div class="preview color-8">&nbsp;</div></a>
+				<a data-id="orange"><div class="preview color-9">&nbsp;</div></a>
+				<a data-id="amber"><div class="preview color-10">&nbsp;</div></a>
+				<a data-id="lime"><div class="preview color-11">&nbsp;</div></a>
+				<a data-id="teal"><div class="preview color-12">&nbsp;</div></a>
+			</div>
+		</div>
+		<!-- /Demo Color changer -->
+
+		<script type="text/javascript" src="{% static "js/bootstrap.min.js" %}"></script>
+		<script type="text/javascript" src="{% static "js/pages-switcher.js" %}"></script>
+		<script type="text/javascript" src="{% static "js/validator.js" %}"></script>
+		<script type="text/javascript" src="{% static "js/jquery.shuffle.min.js" %}"></script>
+		<script type="text/javascript" src="{% static "js/masonry.pkgd.min.js" %}"></script>
+		<script type="text/javascript" src="{% static "js/owl.carousel.min.js" %}"></script>
+		<script type="text/javascript" src="{% static "js/jquery.magnific-popup.min.js" %}"></script>
+		<script type="text/javascript" src="{% static "js/jquery.hoverdir.js" %}"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEn4c_T1rFt7ltf_oNavnjND8dDPm4KQs&language=fa"></script>
+		<script type="text/javascript" src="{% static "js/jquery.googlemap.js" %}"></script>
+		<script type="text/javascript" src="{% static "js/main.js" %}"></script>
+
+		<!-- Demo Color changer Script -->
+		<script src="{% static "spreview/lmpixels-demo-panel.js" %}"></script>
+		<!-- /Demo Color changer Script -->
+	</body>
 </html>
