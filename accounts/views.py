@@ -86,3 +86,10 @@ def login_view(request):
             return redirect('pages:home')
     form = AuthenticationForm()
     return render(request, 'registration/login.html', {'form':form})
+
+
+def logout_view(request):
+    if request.method =='POST':
+        logout(request)
+        messages.error(request, _('you successfully logouted'))
+        return redirect('products:product_list'

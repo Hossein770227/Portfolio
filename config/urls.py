@@ -25,4 +25,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', include('pages.urls')),
     path('accounts/', include('accounts.urls')),
+    path('rosetta/', include('rosetta.urls')),
 ]
+

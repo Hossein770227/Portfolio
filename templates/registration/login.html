@@ -1,6 +1,7 @@
 <h2>user login</h2>
+{% load i18n %}
 <form action='' method='POST'>
     {% csrf_token %}
     {{form.as_p}}
-    <button type='submit'>submit</button>
+    <button type='submit'>{% trans "submit" %}</button>
 </form>
