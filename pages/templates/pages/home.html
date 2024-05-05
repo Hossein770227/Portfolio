@@ -252,14 +252,14 @@
 						<section class="pt-page" data-id="portfolio">
 							<div class="section-inner custom-page-content">
 								<div class="page-header color-1">
-									<h2>نمونه‌کارها</h2>
+									<h2>{% trans "Portfolio" %}</h2>
 								</div>
 								<div class="page-content">
 
 									<!-- Portfolio Content -->
 									<div class="portfolio-content">
 
-										<!-- Portfolio filter -->
+										{% comment %} <!-- Portfolio filter -->
 										<ul id="portfolio_filters" class="portfolio-filters">
 											<li class="active">
 												<a class="filter btn btn-sm btn-link active" data-group="all">همه</a>
@@ -274,7 +274,7 @@
 												<a class="filter btn btn-sm btn-link" data-group="video">ویدئو</a>
 											</li>
 										</ul>
-										<!-- End of Portfolio filter -->
+										<!-- End of Portfolio filter --> {% endcomment %}
 
 										<!-- Portfolio Grid -->
 										<div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3">
@@ -444,7 +444,7 @@
 						</section>
 						<!-- /Portfolio Subpage -->
 
-						<!-- Blog Subpage -->
+						{% comment %} <!-- Blog Subpage -->
 						<section class="pt-page" data-id="blog">
 							<div class="section-inner custom-page-content">
 								<div class="page-header color-1">
@@ -618,20 +618,20 @@
 								</div>
 							</div>
 						</section>
-						<!-- /Blog Subpage -->
+						<!-- /Blog Subpage --> {% endcomment %}
 
 						<!-- Contact Subpage -->
 						<section class="pt-page" data-id="contact">
 							<div class="section-inner custom-page-content">
 								<div class="page-header color-1">
-									<h2>تماس</h2>
+									<h2>{% trans "call" %}</h2>
 								</div>
 								<div class="page-content">
 
 									<div class="row">
 										<div class="col-sm-6 col-md-6">
 											<div class="block-title">
-												<h3>با من در <span>ارتباط</span> باشید</h3>
+												<h3>{% trans "with me " %} <span>{% trans "ralation" %}</span> {% trans "be" %}</h3>
 											</div>
 											<!-- Google Map -->
 											<div id="map" class="map"></div>
@@ -642,7 +642,7 @@
 													<i class="fa fa-map-marker"></i>
 												</div>
 												<div class="ci-text">
-													<p>تهران، خیابان نیایش، جنب پاساژ اطلس</p>
+													<p>{% trans "kish" %}</p>
 												</div>
 											</div>
 											<div class="contact-info-block">
@@ -650,7 +650,7 @@
 													<i class="fa fa-envelope"></i>
 												</div>
 												<div class="ci-text">
-													<p><span class="ltr_text">info@example.com</span></p>
+													<p><span class="ltr_text">hossein.h.a770227@gmail.com</span></p>
 												</div>
 											</div>
 											<div class="contact-info-block">
@@ -658,22 +658,22 @@
 													<i class="fa fa-phone"></i>
 												</div>
 												<div class="ci-text">
-													<p><span class="ltr_text">+123 654 78900</span></p>
+													<p><span class="ltr_text">09933779870</span></p>
 												</div>
 											</div>
-											<div class="contact-info-block">
+											{% comment %} <div class="contact-info-block">
 												<div class="ci-icon">
 													<i class="fa fa-check"></i>
-												</div>
-												<div class="ci-text">
+												</div> {% endcomment %}
+												{% comment %} <div class="ci-text">
 													<p>آماده خدمت رسانی</p>
-												</div>
-											</div>
+												</div> {% endcomment %}
+											{% comment %} </div> {% endcomment %}
 										</div>
 
 										<div class="col-sm-6 col-md-6">
 											<div class="block-title">
-												<h3><span>تماس</span> با من</h3>
+												<h3><span>{% trans "call" %}</span> {% trans "with me" %} </h3>
 											</div>
 											<form id="contact-form" method="post" action="contact_form/contact_form.php">
 

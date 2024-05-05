@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-05 00:22+0330\n"
-"PO-Revision-Date: 2024-05-05 00:27+0330\n"
+"POT-Creation-Date: 2024-05-05 15:31+0330\n"
+"PO-Revision-Date: 2024-05-05 15:40+0330\n"
 "Last-Translator: hossein hadi amani <anonymous@user.tld>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -45,7 +45,7 @@ msgstr "من"
 
 #: .\templates\pages\home.html:68
 msgid "my name is hossein I'm backend developer with Django "
-msgstr "برنامه نویس وب با فریمورک جنگو هستم"
+msgstr "برنامه نویس بک اند با فریمورک جنگو "
 
 #: .\templates\pages\home.html:77
 msgid "age"
@@ -55,7 +55,7 @@ msgstr "سن"
 msgid "Address"
 msgstr "آدرس"
 
-#: .\templates\pages\home.html:78
+#: .\templates\pages\home.html:78 .\templates\pages\home.html:650
 msgid "kish"
 msgstr "کیش"
 
@@ -122,3 +122,27 @@ msgstr "مهارت های "
 #: .\templates\pages\home.html:180
 msgid "Programming"
 msgstr "برنامه نویسی "
+
+#: .\templates\pages\home.html:258
+msgid "Portfolio"
+msgstr "نمونه کار "
+
+#: .\templates\pages\home.html:632 .\templates\pages\home.html:682
+msgid "call"
+msgstr "تماس"
+
+#: .\templates\pages\home.html:639
+msgid "with me "
+msgstr "با من در"
+
+#: .\templates\pages\home.html:639
+msgid "ralation"
+msgstr " ارتباط"
+
+#: .\templates\pages\home.html:639
+msgid "be"
+msgstr "باشید"
+
+#: .\templates\pages\home.html:682
+msgid "with me"
+msgstr "با من"
