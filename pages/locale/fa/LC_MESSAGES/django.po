@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-04 18:45+0330\n"
-"PO-Revision-Date: 2024-05-04 18:51+0330\n"
+"POT-Creation-Date: 2024-05-05 00:22+0330\n"
+"PO-Revision-Date: 2024-05-05 00:27+0330\n"
 "Last-Translator: hossein hadi amani <anonymous@user.tld>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -74,3 +74,51 @@ msgstr "وضعیت"
 #: .\templates\pages\home.html:83
 msgid "ready"
 msgstr "اماده"
+
+#: .\templates\pages\home.html:97
+msgid "rezomeh"
+msgstr "رزومه"
+
+#: .\templates\pages\home.html:105
+msgid "education"
+msgstr "آموزش های تخصصی"
+
+#: .\templates\pages\home.html:111
+msgid "Python course"
+msgstr "دوره پایتون"
+
+#: .\templates\pages\home.html:112 .\templates\pages\home.html:120
+msgid "condingyar"
+msgstr "کدینگ یار"
+
+#: .\templates\pages\home.html:113
+msgid "Python course taught by Professor Haji Hosseini"
+msgstr "دروره پایتون با آموزش  استاد حاجی حسینی "
+
+#: .\templates\pages\home.html:119
+msgid "Django course"
+msgstr "دوره جنگو"
+
+#: .\templates\pages\home.html:121
+msgid "Django course taught by Professor Haji Hosseini"
+msgstr "دوره جنگو پیشرفته با آموزش استاد حاجی حسینی "
+
+#: .\templates\pages\home.html:127
+msgid "Git course"
+msgstr "دوره گیت"
+
+#: .\templates\pages\home.html:129
+msgid "mongrad"
+msgstr "مونگارد"
+
+#: .\templates\pages\home.html:130
+msgid "Git course taught by Professor mongrad"
+msgstr "دوره گیت با آموزش استاد مونگارد"
+
+#: .\templates\pages\home.html:180
+msgid "Skills"
+msgstr "مهارت های "
+
+#: .\templates\pages\home.html:180
+msgid "Programming"
+msgstr "برنامه نویسی "

@@ -77,7 +77,7 @@
 												<li><span class="title">{% trans "age" %}</span> <span class="value">26</span></li>
 												<li><span class="title">{% trans "Address" %}</span> <span class="value">{% trans "kish" %}</span></li>
 												{% comment %} <li><span class="title">آدرس</span> <span class="value">خیابان نیایش، جنب پاساژ اطلس</span></li> {% endcomment %}
-												<li><span class="title">{% trans "email" %}</span> <span class="value ltr_text"><a href="hossein.h.a770227@gmail.com">hossein.h.a770227@gmail.com</a></span></li>
+												<li><span class="title">{% trans "email" %}</span> <span class="value ltr_text">hossein.h.a770227@gmail.com</span></li>
 												<li><span class="title">{% trans "phone number" %}</span> <span class="value ltr_text">09933779870</span></li>
 												<li><span class="title">{% trans "Condition" %}</span> <span class="value available">{% trans "ready" %}</span></li>
 											</ul>
@@ -93,7 +93,7 @@
 						<section class="pt-page" data-id="resume">
 							<div class="section-inner custom-page-content">
 								<div class="page-header color-1">
-									<h2>رزومه</h2>
+									<h2>{% trans "rezomeh" %}</h2>
 								</div>
 								<div class="page-content">
 
@@ -101,41 +101,39 @@
 										<div class="col-sm-6 col-md-6 col-lg-6">
 											<div class="block">
 												<div class="block-title">
-													<h3>تحصیلات</h3>
+													<h3>{% trans "education" %}</h3>
 												</div>
 
 												<div class="timeline">
 													<!-- Education 1 -->
 													<div class="timeline-item">
-														<h4 class="item-title">دوره تخصصی</h4>
-														<span class="item-period">1395</span>
-														<span class="item-small">شرکت سیب پردازان</span>
-														<p class="item-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان</p>
+														<h4 class="item-title">{% trans "Python course" %} </h4>
+														<span class="item-small"> {% trans "condingyar" %} </span>
+														<p class="item-description">{% trans "Python course taught by Professor Haji Hosseini" %}</p>
 													</div>
 													<!-- / Education 1 -->
 
 													<!-- Education 2 -->
 													<div class="timeline-item">
-														<h4 class="item-title">دوره تخصصی</h4>
-														<span class="item-period">1395</span>
-														<span class="item-small">شرکت سیب پردازان</span>
-														<p class="item-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان</p>
+														<h4 class="item-title"> {% trans "Django course" %}</h4>
+														<span class="item-small">{% trans "condingyar" %}</span>
+														<p class="item-description">{% trans "Django course taught by Professor Haji Hosseini" %}</p>
 													</div>
 													<!-- / Education 2 -->
 
 													<!-- Education 3 -->
 													<div class="timeline-item">
-														<h4 class="item-title">دوره تخصصی</h4>
-														<span class="item-period">1395</span>
-														<span class="item-small">شرکت سیب پردازان</span>
-														<p class="item-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان</p>
+														<h4 class="item-title">{% trans "Git course" %} </h4>
+														
+														<span class="item-small">{% trans "mongrad" %}</span>
+														<p class="item-description">{% trans "Git course taught by Professor mongrad" %}</p>
 													</div>
 													<!-- / Education 3 -->
 												</div>
 											</div>
 										</div>
 
-										<div class="col-sm-6 col-md-6 col-lg-6">
+										{% comment %} <div class="col-sm-6 col-md-6 col-lg-6">
 											<div class="block">
 												<div class="block-title">
 													<h3>سوابق شغلی</h3>
@@ -170,61 +168,66 @@
 													<!-- / Experience 3 -->
 												</div>
 											</div>
-										</div>
+										</div> {% endcomment %}
 									</div>
 
 									<div class="row">
 										<div class="col-sm-6 col-md-6 col-lg-6">
 											<div class="block">
 												<div class="block-title">
-													<h3>مهارت های <span>طراحی</span></h3>
+													<h3> <span>{% trans "Skills" %}</span> {% trans "Programming" %}</h3>
 												</div>
 
 												<div class="skills-info">
-													<h4>طراحی وب</h4>                               
+													<h4>python</h4>                               
 													<div class="skill-container">
 														<div class="skill-percentage skill-1"></div>
 													</div>
 
-													<h4>فتوشاپ</h4>
+													<h4>Django</h4>
 													<div class="skill-container">
-														<div class="skill-percentage skill-2"></div>
+														<div class="skill-percentage skill-1"></div>
 													</div>
 
-													<h4>طراحی چاپ</h4>
+													<h4>Git</h4>
+													<div class="skill-container">
+														<div class="skill-percentage skill-2"></div>
+													</div> 
+													<h4>HTML</h4>                               
 													<div class="skill-container">
 														<div class="skill-percentage skill-3"></div>
-													</div> 
+													</div>
+													<h4>Docker</h4>
+													<div class="skill-container">
+														<div class="skill-percentage skill-3"></div>
+													</di>
 												</div>
 
 											</div>
 										</div>
 
-										<div class="col-sm-6 col-md-6 col-lg-6">
+										{% comment %} <div class="col-sm-6 col-md-6 col-lg-6">
 											<div class="block">
 												<div class="block-title">
-													<h3>مهارت های <span>کدنویسی</span></h3>
+													<h3>  <span></span></h3>
 												</div>
 
 												<div class="skills-info">
-													<h4>HTML5</h4>                               
-													<div class="skill-container">
-														<div class="skill-percentage skill-4"></div>
-													</div>
+													
 
-													<h4>CSS3/LESS/SASS</h4>
+													<h4>Docker</h4>
 													<div class="skill-container">
 														<div class="skill-percentage skill-5"></div>
 													</div>
 
-													<h4>jQuery</h4>
+													<h4>postgresql</h4>
 													<div class="skill-container">
-														<div class="skill-percentage skill-6"></div>
+														<div class="skill-percentage "></div>
 													</div> 
 												</div>
 
 											</div>
-										</div>
+										</div> {% endcomment %}
 									</div>
 
 									<!-- Download Resume Button -->
