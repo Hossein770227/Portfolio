@@ -19,7 +19,7 @@ class RecevieMessage(models.Model):
 class Skills(models.Model):
     name = models.CharField( max_length=100)
     course = models.CharField(max_length=150)
-    descrisption = models.TextField()
+    description = models.TextField()
     date_time_create = models.DateTimeField(auto_now=True)
     active = models.BooleanField(default=True)
 
