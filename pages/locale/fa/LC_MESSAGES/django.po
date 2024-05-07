@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-05 15:31+0330\n"
-"PO-Revision-Date: 2024-05-05 15:40+0330\n"
-"Last-Translator: hossein hadi amani <anonymous@user.tld>\n"
+"POT-Creation-Date: 2024-05-07 15:47+0330\n"
+"PO-Revision-Date: 2024-05-07 15:49+0330\n"
+"Last-Translator: Anonymous User <anonymous@user.tld>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -18,6 +18,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
+
+#: .\models.py:7 .\templates\pages\home.html:692
+msgid "full name"
+msgstr "نام کامل"
+
+#: .\models.py:8 .\templates\pages\home.html:81
+msgid "email"
+msgstr "ایمیل"
+
+#: .\models.py:9
+msgid "message"
+msgstr "پیام"
 
 #: .\templates\pages\home.html:5
 msgid "home"
@@ -58,10 +70,6 @@ msgstr "آدرس"
 #: .\templates\pages\home.html:78 .\templates\pages\home.html:650
 msgid "kish"
 msgstr "کیش"
-
-#: .\templates\pages\home.html:81
-msgid "email"
-msgstr "ایمیل"
 
 #: .\templates\pages\home.html:82
 msgid "phone number"
@@ -127,7 +135,7 @@ msgstr "برنامه نویسی "
 msgid "Portfolio"
 msgstr "نمونه کار "
 
-#: .\templates\pages\home.html:632 .\templates\pages\home.html:682
+#: .\templates\pages\home.html:632 .\templates\pages\home.html:684
 msgid "call"
 msgstr "تماس"
 
@@ -143,6 +151,31 @@ msgstr " ارتباط"
 msgid "be"
 msgstr "باشید"
 
-#: .\templates\pages\home.html:682
+#: .\templates\pages\home.html:684
 msgid "with me"
 msgstr "با من"
+
+#: .\templates\pages\home.html:693
+msgid "Name is required."
+msgstr "وارد کردن نام الزامی است."
+
+#: .\templates\pages\home.html:700
+#| msgid "Address"
+msgid "email address"
+msgstr "آدرس ایمیل"
+
+#: .\templates\pages\home.html:701
+msgid "email is required."
+msgstr "وارد کردن  آدرس ایمیل الزامی است."
+
+#: .\templates\pages\home.html:708
+msgid "message for me"
+msgstr "پیام برای من"
+
+#: .\templates\pages\home.html:709
+msgid "please enter your message."
+msgstr "طفا پیام خود را وارد کنید."
+
+#: .\templates\pages\home.html:716
+msgid "send message"
+msgstr "ارسال پیام"

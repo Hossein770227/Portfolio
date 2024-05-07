@@ -13,10 +13,10 @@ class UserAdmin(BaseUserAdmin):
     form = UserChangeForm
     add_form = UserCreationForm
 
-    list_display = ["first_name","last_name",'phone_number', "is_active",  "is_admin",]
+    list_display = ['phone_number', "is_active",  "is_admin",]
     list_filter = ["is_admin"]
     fieldsets = [
-        (None, {"fields": ["first_name","last_name","phone_number" ,"password"]}),
+        (None, {"fields": ["phone_number" ,"password"]}),
         ("Permissions", {"fields": ["is_admin","is_active", "last_login"]}),
     ]
 
@@ -25,13 +25,13 @@ class UserAdmin(BaseUserAdmin):
             None,
             {
                 "classes": ["wide"],
-                "fields": ["first_name","last_name", "phone_number", "password1", "password2"],
+                "fields": ["phone_number", "password1", "password2"],
             },
         ),
     ]
-    search_fields = ["first_name","last_name"]
-    ordering = ["first_name", "last_name"]
-    search_fields=['first_name', "last_name"]
+    search_fields = ['phone_number']
+    ordering = ["phone_number"]
+    search_fields=["phone_number"]
     list_per_page=10
     filter_horizontal = []
 

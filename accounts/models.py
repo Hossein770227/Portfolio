@@ -6,8 +6,6 @@ from django.utils import timezone
 from .managers import MyUserManager
 
 class MyUser(AbstractBaseUser):
-    first_name= models.CharField(verbose_name=_('first name'), max_length=100)
-    last_name= models.CharField(verbose_name=_('last name'), max_length=100)
     phone_number =  models.CharField(verbose_name=_('phone number'), max_length=11, unique=True)
 
     is_active = models.BooleanField(default=True)
