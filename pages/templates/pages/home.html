@@ -123,57 +123,20 @@
 												<div class="block-title">
 													<h3> <span>{% trans "Skills" %}</span> {% trans "Programming" %}</h3>
 												</div>
-
-												<div class="skills-info">
-													<h4>python</h4>                               
-													<div class="skill-container">
-														<div class="skill-percentage skill-1"></div>
+												<div class="skills-info" dir="rtl">
+													<table>
+														<tr>
+														<h4>python</h4>                               
+															<img src="{% static "images/python.png" %}"  width="80" height="40">
+														<h4>Django</h4>
+															<img src="{% static "images/django.png" %}"  width="80" height="40">
+														</tr>
+														</table>
 													</div>
-
-													<h4>Django</h4>
-													<div class="skill-container">
-														<div class="skill-percentage skill-1"></div>
-													</div>
-
-													<h4>Git</h4>
-													<div class="skill-container">
-														<div class="skill-percentage skill-2"></div>
-													</div> 
-													<h4>HTML</h4>                               
-													<div class="skill-container">
-														<div class="skill-percentage skill-3"></div>
-													</div>
-													<h4>Docker</h4>
-													<div class="skill-container">
-														<div class="skill-percentage skill-3"></div>
-													</di>
-												</div>
 
 											</div>
 										</div>
 
-										{% comment %} <div class="col-sm-6 col-md-6 col-lg-6">
-											<div class="block">
-												<div class="block-title">
-													<h3>  <span></span></h3>
-												</div>
-
-												<div class="skills-info">
-													
-
-													<h4>Docker</h4>
-													<div class="skill-container">
-														<div class="skill-percentage skill-5"></div>
-													</div>
-
-													<h4>postgresql</h4>
-													<div class="skill-container">
-														<div class="skill-percentage "></div>
-													</div> 
-												</div>
-
-											</div>
-										</div> {% endcomment %}
 									</div>
 									<!-- Download Resume Button -->
 									<div class="row">
@@ -462,6 +425,6 @@
 			<!-- /Main Content -->
 		</div>
 		<footer>
-			<div class="copyrights">تمامی حقوق محفوظ است. ارائه شده در وبسایت راستچین</div> 
+			<div class="copyrights">{% trans "message button" %}</div> 
 		</footer>
 {% endblock content %}

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-07 15:47+0330\n"
-"PO-Revision-Date: 2024-05-07 15:49+0330\n"
+"POT-Creation-Date: 2024-05-08 16:01+0330\n"
+"PO-Revision-Date: 2024-05-08 16:02+0330\n"
 "Last-Translator: Anonymous User <anonymous@user.tld>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
-#: .\models.py:7 .\templates\pages\home.html:692
+#: .\models.py:7 .\templates\pages\home.html:387
 msgid "full name"
 msgstr "نام کامل"
 
@@ -67,7 +67,7 @@ msgstr "سن"
 msgid "Address"
 msgstr "آدرس"
 
-#: .\templates\pages\home.html:78 .\templates\pages\home.html:650
+#: .\templates\pages\home.html:78 .\templates\pages\home.html:356
 msgid "kish"
 msgstr "کیش"
 
@@ -91,91 +91,91 @@ msgstr "رزومه"
 msgid "education"
 msgstr "آموزش های تخصصی"
 
-#: .\templates\pages\home.html:111
-msgid "Python course"
-msgstr "دوره پایتون"
-
-#: .\templates\pages\home.html:112 .\templates\pages\home.html:120
-msgid "condingyar"
-msgstr "کدینگ یار"
-
-#: .\templates\pages\home.html:113
-msgid "Python course taught by Professor Haji Hosseini"
-msgstr "دروره پایتون با آموزش  استاد حاجی حسینی "
-
-#: .\templates\pages\home.html:119
-msgid "Django course"
-msgstr "دوره جنگو"
-
-#: .\templates\pages\home.html:121
-msgid "Django course taught by Professor Haji Hosseini"
-msgstr "دوره جنگو پیشرفته با آموزش استاد حاجی حسینی "
-
-#: .\templates\pages\home.html:127
-msgid "Git course"
-msgstr "دوره گیت"
-
-#: .\templates\pages\home.html:129
-msgid "mongrad"
-msgstr "مونگارد"
-
-#: .\templates\pages\home.html:130
-msgid "Git course taught by Professor mongrad"
-msgstr "دوره گیت با آموزش استاد مونگارد"
-
-#: .\templates\pages\home.html:180
+#: .\templates\pages\home.html:125
 msgid "Skills"
 msgstr "مهارت های "
 
-#: .\templates\pages\home.html:180
+#: .\templates\pages\home.html:125
 msgid "Programming"
 msgstr "برنامه نویسی "
 
-#: .\templates\pages\home.html:258
+#: .\templates\pages\home.html:161
 msgid "Portfolio"
 msgstr "نمونه کار "
 
-#: .\templates\pages\home.html:632 .\templates\pages\home.html:684
+#: .\templates\pages\home.html:338 .\templates\pages\home.html:379
 msgid "call"
 msgstr "تماس"
 
-#: .\templates\pages\home.html:639
+#: .\templates\pages\home.html:345
 msgid "with me "
 msgstr "با من در"
 
-#: .\templates\pages\home.html:639
+#: .\templates\pages\home.html:345
 msgid "ralation"
 msgstr " ارتباط"
 
-#: .\templates\pages\home.html:639
+#: .\templates\pages\home.html:345
 msgid "be"
 msgstr "باشید"
 
-#: .\templates\pages\home.html:684
+#: .\templates\pages\home.html:379
 msgid "with me"
 msgstr "با من"
 
-#: .\templates\pages\home.html:693
+#: .\templates\pages\home.html:388
 msgid "Name is required."
 msgstr "وارد کردن نام الزامی است."
 
-#: .\templates\pages\home.html:700
-#| msgid "Address"
+#: .\templates\pages\home.html:395
 msgid "email address"
 msgstr "آدرس ایمیل"
 
-#: .\templates\pages\home.html:701
+#: .\templates\pages\home.html:396
 msgid "email is required."
 msgstr "وارد کردن  آدرس ایمیل الزامی است."
 
-#: .\templates\pages\home.html:708
+#: .\templates\pages\home.html:403
 msgid "message for me"
 msgstr "پیام برای من"
 
-#: .\templates\pages\home.html:709
+#: .\templates\pages\home.html:404
 msgid "please enter your message."
 msgstr "طفا پیام خود را وارد کنید."
 
-#: .\templates\pages\home.html:716
+#: .\templates\pages\home.html:411
 msgid "send message"
 msgstr "ارسال پیام"
+
+#: .\templates\pages\home.html:429
+#| msgid "message"
+msgid "message button"
+msgstr "برنامه نویسی وب سایت با فریمورک جنگو "
+
+#: .\views.py:22
+msgid "your message successfully submit"
+msgstr "پیام شما با موفقیت ثبت شد."
+
+#~ msgid "Python course"
+#~ msgstr "دوره پایتون"
+
+#~ msgid "condingyar"
+#~ msgstr "کدینگ یار"
+
+#~ msgid "Python course taught by Professor Haji Hosseini"
+#~ msgstr "دروره پایتون با آموزش  استاد حاجی حسینی "
+
+#~ msgid "Django course"
+#~ msgstr "دوره جنگو"
+
+#~ msgid "Django course taught by Professor Haji Hosseini"
+#~ msgstr "دوره جنگو پیشرفته با آموزش استاد حاجی حسینی "
+
+#~ msgid "Git course"
+#~ msgstr "دوره گیت"
+
+#~ msgid "mongrad"
+#~ msgstr "مونگارد"
+
+#~ msgid "Git course taught by Professor mongrad"
+#~ msgstr "دوره گیت با آموزش استاد مونگارد"

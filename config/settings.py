@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 import os
+from django.contrib.messages import constants
 from environs import Env
 from pathlib import Path
 
@@ -158,3 +159,8 @@ LANGUAGES =(
 # crispy config 
 
 CRISPY_TEMPLATE_PACK='bootstrap4'
+
+# messages config
+MESSAGE_TAGS={
+    constants.ERROR:"danger",
+}
