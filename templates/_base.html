@@ -35,7 +35,7 @@
 			<header id="site_header" class="header mobile-menu-hide">
 				<div class="header-content">
 					<div class="site-title-block mobile-hidden">
-						<div class="site-title">حسین  <span>هادی امانی </span></div>
+						<div class="site-title">{% trans "hossein" %}  <span>{% trans "hadi amani" %}  </span></div>
 					</div>
 
 					<!-- Navigation -->
@@ -48,9 +48,9 @@
 							<li>
 								<a class="pt-trigger" href="#resume">{% trans "Rezomeh" %}</a>
 							</li>
-							<li>
+							{% comment %} <li>
 								<a class="pt-trigger" href="#portfolio">{% trans "Portfolios" %}</a>
-							</li>
+							</li> {% endcomment %}
 							<li>
 								<a class="pt-trigger" href="#contact">{% trans "call" %}</a>
 							</li>

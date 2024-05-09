@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 16:01+0330\n"
-"PO-Revision-Date: 2024-05-08 16:02+0330\n"
+"POT-Creation-Date: 2024-05-08 18:58+0330\n"
+"PO-Revision-Date: 2024-05-08 18:59+0330\n"
 "Last-Translator: Anonymous User <anonymous@user.tld>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -19,7 +19,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
-#: .\models.py:7 .\templates\pages\home.html:387
+#: .\apps.py:8
+msgid "my works"
+msgstr "فعالیت های من"
+
+#: .\models.py:7 .\templates\pages\home.html:392
 msgid "full name"
 msgstr "نام کامل"
 
@@ -30,6 +34,38 @@ msgstr "ایمیل"
 #: .\models.py:9
 msgid "message"
 msgstr "پیام"
+
+#: .\models.py:10 .\models.py:27
+msgid "date time created"
+msgstr "تاریخ ایجاد"
+
+#: .\models.py:13 .\models.py:14
+#| msgid "receviemessage"
+msgid "RecevieMessage"
+msgstr "پیام های دریافتی "
+
+#: .\models.py:24
+#| msgid "Django course"
+msgid "name of course"
+msgstr "نام دوره"
+
+#: .\models.py:25
+#| msgid "Git course"
+msgid "course"
+msgstr "دوره "
+
+#: .\models.py:26
+#| msgid "Condition"
+msgid "description"
+msgstr "پیام"
+
+#: .\models.py:28
+msgid "active"
+msgstr "فعال"
+
+#: .\models.py:31 .\models.py:32
+msgid "skills"
+msgstr "مهارت های من"
 
 #: .\templates\pages\home.html:5
 msgid "home"
@@ -123,32 +159,31 @@ msgstr "باشید"
 msgid "with me"
 msgstr "با من"
 
-#: .\templates\pages\home.html:388
+#: .\templates\pages\home.html:393
 msgid "Name is required."
 msgstr "وارد کردن نام الزامی است."
 
-#: .\templates\pages\home.html:395
+#: .\templates\pages\home.html:400
 msgid "email address"
 msgstr "آدرس ایمیل"
 
-#: .\templates\pages\home.html:396
+#: .\templates\pages\home.html:401
 msgid "email is required."
 msgstr "وارد کردن  آدرس ایمیل الزامی است."
 
-#: .\templates\pages\home.html:403
+#: .\templates\pages\home.html:408
 msgid "message for me"
 msgstr "پیام برای من"
 
-#: .\templates\pages\home.html:404
+#: .\templates\pages\home.html:409
 msgid "please enter your message."
 msgstr "طفا پیام خود را وارد کنید."
 
-#: .\templates\pages\home.html:411
+#: .\templates\pages\home.html:416
 msgid "send message"
 msgstr "ارسال پیام"
 
-#: .\templates\pages\home.html:429
-#| msgid "message"
+#: .\templates\pages\home.html:434
 msgid "message button"
 msgstr "برنامه نویسی وب سایت با فریمورک جنگو "
 
@@ -165,14 +200,8 @@ msgstr "پیام شما با موفقیت ثبت شد."
 #~ msgid "Python course taught by Professor Haji Hosseini"
 #~ msgstr "دروره پایتون با آموزش  استاد حاجی حسینی "
 
-#~ msgid "Django course"
-#~ msgstr "دوره جنگو"
-
 #~ msgid "Django course taught by Professor Haji Hosseini"
 #~ msgstr "دوره جنگو پیشرفته با آموزش استاد حاجی حسینی "
-
-#~ msgid "Git course"
-#~ msgstr "دوره گیت"
 
 #~ msgid "mongrad"
 #~ msgstr "مونگارد"

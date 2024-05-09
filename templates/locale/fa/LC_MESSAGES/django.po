@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-04 18:52+0330\n"
-"PO-Revision-Date: 2024-05-05 15:39+0330\n"
-"Last-Translator: hossein hadi amani <anonymous@user.tld>\n"
+"POT-Creation-Date: 2024-05-08 18:46+0330\n"
+"PO-Revision-Date: 2024-05-08 18:47+0330\n"
+"Last-Translator: Anonymous User <anonymous@user.tld>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -19,22 +19,28 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
-#: .\_base.html:54
+#: .\_base.html:38
+msgid "hossein"
+msgstr "حسین"
+
+#: .\_base.html:38
+msgid "hadi amani"
+msgstr "هادی امانی"
+
+#: .\_base.html:46
 msgid "home"
 msgstr "صفحه اصلی"
 
-#: .\_base.html:57
+#: .\_base.html:49
 msgid "Rezomeh"
 msgstr "رزومه"
 
-#: .\_base.html:60
-msgid "Portfolios"
-msgstr "نمونه کارها"
-
-#: .\_base.html:63
+#: .\_base.html:56
 msgid "call"
 msgstr "تماس"
 
-#: .\_base.html:78
-msgid "main color"
-msgstr "رنگ اصلی"
+#~ msgid "Portfolios"
+#~ msgstr "نمونه کارها"
+
+#~ msgid "main color"
+#~ msgstr "رنگ اصلی"

@@ -1,9 +1,10 @@
 from django.contrib import admin
+from jalali_date.admin import ModelAdminJalaliMixin
 
 from .models import RecevieMessage , Skills
 
 @admin.register(Skills)
-class SkillAdmin(admin.ModelAdmin):
+class SkillAdmin(ModelAdminJalaliMixin,admin.ModelAdmin):
     list_display= ['name','course','date_time_create','active']
     ordering = ['date_time_create']
 
@@ -11,7 +12,9 @@ class SkillAdmin(admin.ModelAdmin):
 
 
 @admin.register(RecevieMessage)
-class ReciveMessageAdmin(admin.ModelAdmin):
+class ReciveMessageAdmin(ModelAdminJalaliMixin,admin.ModelAdmin):
     list_display= ['full_name','email','date_time_create',]
     ordering = ['date_time_create']
 
+    def get_created_jalali(self, obj):
+        return datetime2jalali(obj.created).strftime('%a, %d %b %Y %H:%M:%S')
