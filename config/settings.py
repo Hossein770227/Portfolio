@@ -48,6 +48,9 @@ INSTALLED_APPS = [
     'pages',
     'accounts',
 
+    
+    
+
     # third party app
     "rosetta",
     'crispy_bootstrap4',

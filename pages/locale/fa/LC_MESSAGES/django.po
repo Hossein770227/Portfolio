@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 18:58+0330\n"
-"PO-Revision-Date: 2024-05-08 18:59+0330\n"
+"POT-Creation-Date: 2024-05-09 20:55+0330\n"
+"PO-Revision-Date: 2024-05-09 20:55+0330\n"
 "Last-Translator: Anonymous User <anonymous@user.tld>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -23,47 +23,43 @@ msgstr ""
 msgid "my works"
 msgstr "فعالیت های من"
 
-#: .\models.py:7 .\templates\pages\home.html:392
+#: .\models.py:8 .\templates\pages\home.html:389
 msgid "full name"
 msgstr "نام کامل"
 
-#: .\models.py:8 .\templates\pages\home.html:81
+#: .\models.py:9 .\templates\pages\home.html:81
 msgid "email"
 msgstr "ایمیل"
 
-#: .\models.py:9
+#: .\models.py:10
 msgid "message"
 msgstr "پیام"
 
-#: .\models.py:10 .\models.py:27
+#: .\models.py:11 .\models.py:28
 msgid "date time created"
 msgstr "تاریخ ایجاد"
 
-#: .\models.py:13 .\models.py:14
-#| msgid "receviemessage"
+#: .\models.py:14 .\models.py:15
 msgid "RecevieMessage"
 msgstr "پیام های دریافتی "
 
-#: .\models.py:24
-#| msgid "Django course"
+#: .\models.py:25
 msgid "name of course"
 msgstr "نام دوره"
 
-#: .\models.py:25
-#| msgid "Git course"
+#: .\models.py:26
 msgid "course"
 msgstr "دوره "
 
-#: .\models.py:26
-#| msgid "Condition"
+#: .\models.py:27
 msgid "description"
 msgstr "پیام"
 
-#: .\models.py:28
+#: .\models.py:29
 msgid "active"
 msgstr "فعال"
 
-#: .\models.py:31 .\models.py:32
+#: .\models.py:32 .\models.py:33
 msgid "skills"
 msgstr "مهارت های من"
 
@@ -96,14 +92,15 @@ msgid "my name is hossein I'm backend developer with Django "
 msgstr "برنامه نویس بک اند با فریمورک جنگو "
 
 #: .\templates\pages\home.html:77
-msgid "age"
-msgstr "سن"
+#| msgid "date time created"
+msgid "date time birth"
+msgstr "متولد"
 
 #: .\templates\pages\home.html:78
 msgid "Address"
 msgstr "آدرس"
 
-#: .\templates\pages\home.html:78 .\templates\pages\home.html:356
+#: .\templates\pages\home.html:78 .\templates\pages\home.html:353
 msgid "kish"
 msgstr "کیش"
 
@@ -135,61 +132,63 @@ msgstr "مهارت های "
 msgid "Programming"
 msgstr "برنامه نویسی "
 
-#: .\templates\pages\home.html:161
-msgid "Portfolio"
-msgstr "نمونه کار "
-
-#: .\templates\pages\home.html:338 .\templates\pages\home.html:379
+#: .\templates\pages\home.html:335 .\templates\pages\home.html:376
 msgid "call"
 msgstr "تماس"
 
-#: .\templates\pages\home.html:345
+#: .\templates\pages\home.html:342
 msgid "with me "
 msgstr "با من در"
 
-#: .\templates\pages\home.html:345
+#: .\templates\pages\home.html:342
 msgid "ralation"
 msgstr " ارتباط"
 
-#: .\templates\pages\home.html:345
+#: .\templates\pages\home.html:342
 msgid "be"
 msgstr "باشید"
 
-#: .\templates\pages\home.html:379
+#: .\templates\pages\home.html:376
 msgid "with me"
 msgstr "با من"
 
-#: .\templates\pages\home.html:393
+#: .\templates\pages\home.html:390
 msgid "Name is required."
 msgstr "وارد کردن نام الزامی است."
 
-#: .\templates\pages\home.html:400
+#: .\templates\pages\home.html:397
 msgid "email address"
 msgstr "آدرس ایمیل"
 
-#: .\templates\pages\home.html:401
+#: .\templates\pages\home.html:398
 msgid "email is required."
 msgstr "وارد کردن  آدرس ایمیل الزامی است."
 
-#: .\templates\pages\home.html:408
+#: .\templates\pages\home.html:405
 msgid "message for me"
 msgstr "پیام برای من"
 
-#: .\templates\pages\home.html:409
+#: .\templates\pages\home.html:406
 msgid "please enter your message."
 msgstr "طفا پیام خود را وارد کنید."
 
-#: .\templates\pages\home.html:416
+#: .\templates\pages\home.html:413
 msgid "send message"
 msgstr "ارسال پیام"
 
-#: .\templates\pages\home.html:434
+#: .\templates\pages\home.html:431
 msgid "message button"
 msgstr "برنامه نویسی وب سایت با فریمورک جنگو "
 
 #: .\views.py:22
 msgid "your message successfully submit"
 msgstr "پیام شما با موفقیت ثبت شد."
+
+#~ msgid "age"
+#~ msgstr "سن"
+
+#~ msgid "Portfolio"
+#~ msgstr "نمونه کار "
 
 #~ msgid "Python course"
 #~ msgstr "دوره پایتون"

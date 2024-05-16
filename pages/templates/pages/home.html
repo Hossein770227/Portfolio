@@ -28,9 +28,9 @@
 							<div class="section-inner start-page-content">
 								<div class="page-header">
 									<div class="row">
-										<div class="col-sm-4 col-md-4 col-lg-4">
+										<div class="col-sm-3 col-md-4 col-lg-2">
 											<div class="photo">
-												<img src="{% static "images/hossein.png" %}" alt="">
+												<img src="{% static "images/hadi.png" %}" alt="">
 											</div>
 										</div>
 
@@ -68,7 +68,7 @@
                                                 <p>{% trans "my name is hossein I'm backend developer with Django " %}</p>
 											</div>
 											<div class="download-resume">
-												<a href="" class="btn btn-secondary">دریافت رزومه</a>
+												<a href="{% url "pages:download" %}" download='rezomeh.pdf' class="btn btn-secondary">دریافت رزومه</a>
 											</div>
 										</div>
 
@@ -124,16 +124,12 @@
 													<h3> <span>{% trans "Skills" %}</span> {% trans "Programming" %}</h3>
 												</div>
 												<div class="skills-info" dir="rtl">
-													<table>
-														<tr>
-														<h4>python</h4>                               
-															<img src="{% static "images/python.png" %}"  width="80" height="40">
-														<h4>Django</h4>
-															<img src="{% static "images/django.png" %}"  width="80" height="40">
-														</tr>
-														</table>
-													</div>
-
+													<h4>python</h4>                               
+													<h4>Django</h4>
+													<h4>Git</h4>
+													<h4>Docker</h4>
+													<h4>html</h4>
+												</div>
 											</div>
 										</div>
 
@@ -143,7 +139,7 @@
 										<div class="col-sm-12 col-md-12 col-lg-12">
 											<div class="block">
 												<div class="center download-resume">
-													<a href="#" class="btn btn-secondary">دریافت رزومه</a>
+													<a href="{% url "pages:download" %}" download='rezomeh.pdf' class="btn btn-secondary">دریافت رزومه</a>
 												</div>
 											</div>
 										</div>
@@ -154,7 +150,7 @@
 						</section>
 						<!-- End of Resume Subpage -->
 						<!-- Portfolio Subpage -->
-						<section class="pt-page" data-id="portfolio">
+						{% comment %} <section class="pt-page" data-id="portfolio">
 							<div class="section-inner custom-page-content">
 								<div class="page-header color-1">
 									<h2>{% trans "Portfolio" %}</h2>
@@ -328,7 +324,7 @@
 									<!-- /Portfolio Content -->
 								</div>
 							</div>
-						</section>
+						</section> {% endcomment %}
 						<!-- /Portfolio Subpage -->
 						<!-- Contact Subpage -->
 						<section class="pt-page" data-id="contact">
