@@ -30,7 +30,7 @@ SECRET_KEY = env('DJANGO_SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool('DJANGO_DEBUG')
 
-ALLOWED_HOSTS = ['127.0.0.1',]
+ALLOWED_HOSTS = ['127.0.0.1','ho3ein770227.ir']
 
 
 # Application definition
@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     # my app
     'pages',
     'accounts',
+    
 
     
     

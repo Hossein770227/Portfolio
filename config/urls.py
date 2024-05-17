@@ -23,7 +23,7 @@ admin.site.site_header=_('Personal site')
 admin.site.index_title=_("manager site")
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/', include('pages.urls')),
+    path('profile/', include('pages.urls')),
     path('accounts/', include('accounts.urls')),
     path('rosetta/', include('rosetta.urls')),
 ]
