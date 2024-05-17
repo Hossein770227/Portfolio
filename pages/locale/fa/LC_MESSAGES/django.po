@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-09 20:55+0330\n"
-"PO-Revision-Date: 2024-05-09 20:55+0330\n"
+"POT-Creation-Date: 2024-05-17 21:35+0330\n"
+"PO-Revision-Date: 2024-05-17 21:35+0330\n"
 "Last-Translator: Anonymous User <anonymous@user.tld>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -23,7 +23,7 @@ msgstr ""
 msgid "my works"
 msgstr "فعالیت های من"
 
-#: .\models.py:8 .\templates\pages\home.html:389
+#: .\models.py:8 .\templates\pages\home.html:407
 msgid "full name"
 msgstr "نام کامل"
 
@@ -92,7 +92,6 @@ msgid "my name is hossein I'm backend developer with Django "
 msgstr "برنامه نویس بک اند با فریمورک جنگو "
 
 #: .\templates\pages\home.html:77
-#| msgid "date time created"
 msgid "date time birth"
 msgstr "متولد"
 
@@ -100,7 +99,7 @@ msgstr "متولد"
 msgid "Address"
 msgstr "آدرس"
 
-#: .\templates\pages\home.html:78 .\templates\pages\home.html:353
+#: .\templates\pages\home.html:78 .\templates\pages\home.html:371
 msgid "kish"
 msgstr "کیش"
 
@@ -109,12 +108,9 @@ msgid "phone number"
 msgstr "تلفن"
 
 #: .\templates\pages\home.html:83
-msgid "Condition"
-msgstr "وضعیت"
-
-#: .\templates\pages\home.html:83
-msgid "ready"
-msgstr "اماده"
+#| msgid "email address"
+msgid "github address"
+msgstr "آدرس گیت هاب"
 
 #: .\templates\pages\home.html:97
 msgid "rezomeh"
@@ -124,65 +120,83 @@ msgstr "رزومه"
 msgid "education"
 msgstr "آموزش های تخصصی"
 
-#: .\templates\pages\home.html:125
+#: .\templates\pages\home.html:122
+msgid "degree of education"
+msgstr "مدرک تحصیلی"
+
+#: .\templates\pages\home.html:128
+msgid "Masters"
+msgstr "لیسانس"
+
+#: .\templates\pages\home.html:129
+msgid "Electronic"
+msgstr "الکترونیک"
+
+#: .\templates\pages\home.html:141
 msgid "Skills"
 msgstr "مهارت های "
 
-#: .\templates\pages\home.html:125
+#: .\templates\pages\home.html:141
 msgid "Programming"
 msgstr "برنامه نویسی "
 
-#: .\templates\pages\home.html:335 .\templates\pages\home.html:376
+#: .\templates\pages\home.html:353 .\templates\pages\home.html:394
 msgid "call"
 msgstr "تماس"
 
-#: .\templates\pages\home.html:342
+#: .\templates\pages\home.html:360
 msgid "with me "
 msgstr "با من در"
 
-#: .\templates\pages\home.html:342
+#: .\templates\pages\home.html:360
 msgid "ralation"
 msgstr " ارتباط"
 
-#: .\templates\pages\home.html:342
+#: .\templates\pages\home.html:360
 msgid "be"
 msgstr "باشید"
 
-#: .\templates\pages\home.html:376
+#: .\templates\pages\home.html:394
 msgid "with me"
 msgstr "با من"
 
-#: .\templates\pages\home.html:390
+#: .\templates\pages\home.html:408
 msgid "Name is required."
 msgstr "وارد کردن نام الزامی است."
 
-#: .\templates\pages\home.html:397
+#: .\templates\pages\home.html:415
 msgid "email address"
 msgstr "آدرس ایمیل"
 
-#: .\templates\pages\home.html:398
+#: .\templates\pages\home.html:416
 msgid "email is required."
 msgstr "وارد کردن  آدرس ایمیل الزامی است."
 
-#: .\templates\pages\home.html:405
+#: .\templates\pages\home.html:423
 msgid "message for me"
 msgstr "پیام برای من"
 
-#: .\templates\pages\home.html:406
+#: .\templates\pages\home.html:424
 msgid "please enter your message."
 msgstr "طفا پیام خود را وارد کنید."
 
-#: .\templates\pages\home.html:413
+#: .\templates\pages\home.html:431
 msgid "send message"
 msgstr "ارسال پیام"
 
-#: .\templates\pages\home.html:431
+#: .\templates\pages\home.html:449
 msgid "message button"
 msgstr "برنامه نویسی وب سایت با فریمورک جنگو "
 
-#: .\views.py:22
+#: .\views.py:28
 msgid "your message successfully submit"
 msgstr "پیام شما با موفقیت ثبت شد."
+
+#~ msgid "Condition"
+#~ msgstr "وضعیت"
+
+#~ msgid "ready"
+#~ msgstr "اماده"
 
 #~ msgid "age"
 #~ msgstr "سن"
