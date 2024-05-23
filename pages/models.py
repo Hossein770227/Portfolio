@@ -35,3 +35,12 @@ class Skills(models.Model):
     def __str__(self):
         return f'{self.name} {self.course}'
     
+class Portfolio(models.Model):
+    name = models.CharField(_("name"), max_length=50)
+    image = models.ImageField(_("image"), upload_to='cover/', )
+    date_time_created = models.DateTimeField(_("date time create"), auto_now_add=True)
+    active = models.BooleanField(_("active"),default=True)
+
+    class Meta:
+        verbose_name = _('Portfolio')
+        verbose_name_plural = _('Portfolio')

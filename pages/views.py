@@ -14,12 +14,13 @@ from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.messages.views import SuccessMessageMixin
 
-from .models import Skills
+from .models import Skills, Portfolio
 
 
 def home_page_view(request):
     skills = Skills.objects.filter(active=True)
-    return render(request,'pages/home.html',{'skills':skills})
+    portfolio = Portfolio.objects.filter(active=True)
+    return render(request,'pages/home.html',{'skills':skills,'portfolios':portfolio})
 
 
 class ReciveMessage(SuccessMessageMixin,generic.CreateView, LoginRequiredMixin):

@@ -30,7 +30,7 @@
 									<div class="row">
 										<div class="col-sm-3 col-md-4 col-lg-2">
 											<div class="photo">
-												<img src="{% static "images/hadi.png" %}" alt="">
+												<img src="{% static "images/hossein123.png" %}" alt="">
 											</div>
 										</div>
 
@@ -166,22 +166,41 @@
 								</div>
 							</div>
 						</section>
-						<!-- End of Resume Subpage -->
+						 <!-- End of Resume Subpage -->
+
 						<!-- Portfolio Subpage -->
-						{% comment %} <section class="pt-page" data-id="portfolio">
+						<section class="pt-page" data-id="portfolio">
 							<div class="section-inner custom-page-content">
 								<div class="page-header color-1">
-									<h2>{% trans "Portfolio" %}</h2>
+									<h2>نمونه‌کارها</h2>
 								</div>
 								<div class="page-content">
 
 									<!-- Portfolio Content -->
 									<div class="portfolio-content">
+
+										<!-- Portfolio filter -->
+										{% comment %} <ul id="portfolio_filters" class="portfolio-filters">
+											<li class="active">
+												<a class="filter btn btn-sm btn-link active" data-group="all">همه</a>
+											</li>
+											<li>
+												<a class="filter btn btn-sm btn-link" data-group="media">رسانه</a>
+											</li>
+											<li>
+												<a class="filter btn btn-sm btn-link" data-group="illustration">تصویر</a>
+											</li>
+											<li>
+												<a class="filter btn btn-sm btn-link" data-group="video">ویدئو</a>
+											</li>
+										</ul> {% endcomment %}
+										<!-- End of Portfolio filter -->
+
 										<!-- Portfolio Grid -->
 										<div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3">
 
 											<!-- Portfolio Item 1 -->
-											<figure class="item" data-groups='["all", "media"]'>
+											{% comment %} <figure class="item" data-groups='["all", "media"]'>
 												<a class="ajax-page-load" href="ajax/portfolio-1.html">
 													<img src="images/portfolio/1.jpg" alt="">
 													<div>
@@ -190,11 +209,11 @@
 														<i class="fa fa-file-text-o"></i>
 													</div>
 												</a>
-											</figure>
+											</figure> {% endcomment %}
 											<!-- /Portfolio Item 1 -->
 
 											<!-- Portfolio Item 2 -->
-											<figure class="item" data-groups='["all", "video"]'>
+											{% comment %} <figure class="item" data-groups='["all", "video"]'>
 												<a href="ajax/video-iframe.html" title="عنوان ویدئو" class="lightbox mfp-iframe">
 													<img src="images/portfolio/2.jpg" alt="">
 													<div>
@@ -203,138 +222,22 @@
 														<i class="fa fa-video-camera"></i>
 													</div>
 												</a>
-											</figure>
+											</figure> {% endcomment %}
 											<!-- /Portfolio Item 2 -->
-
 											<!-- Portfolio Item 3 -->
-											<figure class="item" data-groups='["all","illustration"]'>
-												<a href="images/portfolio/full/3.jpg" class="lightbox" title="عنوان تصویر">
-													<img src="images/portfolio/3.jpg" alt="">
-													<div>
-														<h5 class="name">نام پروژه</h5>
-														<small>تصویر</small>
-														<i class="fa fa-image"></i>
-													</div>
-												</a>
-											</figure>
-											<!-- /Portfolio Item 3 -->
-
-											<!-- Portfolio Item 4 -->
-											<figure class="item" data-groups='["all", "media"]'>
-												<a class="ajax-page-load" href="ajax/portfolio-2.html">
-													<img src="images/portfolio/4.jpg" alt="">
-													<div>
-														<h5 class="name">نام پروژه</h5>
-														<small>رسانه</small>
-														<i class="fa fa-file-text-o"></i>
-													</div>
-												</a>
-											</figure>
-											<!-- /Portfolio Item 4 -->
-
-											<!-- Portfolio Item 5 -->
-											<figure class="item" data-groups='["all", "illustration"]'>
-												<a href="images/portfolio/full/5.jpg" class="lightbox" title="عنوان تصویر">
-													<img src="images/portfolio/5.jpg" alt="">
-													<div>
-														<h5 class="name">نام پروژه</h5>
-														<small>تصویر</small>
-														<i class="fa fa-image"></i>
-													</div>
-												</a>
-											</figure>
-											<!-- /Portfolio Item 5 -->
-
-											<!-- Portfolio Item 6 -->
-											<figure class="item" data-groups='["all", "media"]'>
-												<a class="ajax-page-load" href="ajax/portfolio-3.html">
-													<img src="images/portfolio/6.jpg" alt="">
-													<div>
-														<h5 class="name">نام پروژه</h5>
-														<small>رسانه</small>
-														<i class="fa fa-file-text-o"></i>
-													</div>
-												</a>
-											</figure>
-											<!-- /Portfolio Item 6 -->
-
-											<!-- Portfolio Item 7 -->
-											<figure class="item" data-groups='["all", "video"]'>
-												<a href="ajax/video-iframe.html" title="عنوان ویدئو" class="lightbox mfp-iframe">
-													<img src="images/portfolio/7.jpg" alt="">
-													<div>
-														<h5 class="name">نام پروژه</h5>
-														<small>ویدئو</small>
-														<i class="fa fa-video-camera"></i>
-													</div>
-												</a>
-											</figure>
-											<!-- /Portfolio Item 7 -->
-
-											<!-- Portfolio Item 8 -->
-											<figure class="item" data-groups='["all",  "media"]'>
-												<a class="ajax-page-load" href="ajax/portfolio-4.html">
-													<img src="images/portfolio/8.jpg" alt="">
-													<div>
-														<h5 class="name">نام پروژه</h5>
-														<small>رسانه</small>
-														<i class="fa fa-file-text-o"></i>
-													</div>
-												</a>
-											</figure>
-											<!-- /Portfolio Item 8 -->
-
-											<!-- Portfolio Item 9 -->
-											<figure class="item" data-groups='["all","illustration"]'>
-												<a href="images/portfolio/full/9.jpg" class="lightbox" title="عنوان تصویر">
-													<img src="images/portfolio/9.jpg" alt="">
-													<div>
-														<h5 class="name">نام پروژه</h5>
-														<small>تصویر</small>
-														<i class="fa fa-image"></i>
-													</div>
-												</a>
-											</figure>
-											<!-- /Portfolio Item 9 -->
-
-											<!-- Portfolio Item 10 -->
-											<figure class="item" data-groups='["all", "video"]'>
-												<a href="ajax/video-iframe.html" title="عنوان ویدئو" class="lightbox mfp-iframe">
-													<img src="images/portfolio/10.jpg" alt="">
-													<div>
-														<h5 class="name">نام پروژه</h5>
-														<small>ویدئو</small>
-														<i class="fa fa-video-camera"></i>
-													</div>
-												</a>
-											</figure>
-											<!-- /Portfolio Item 10 -->
-
-											<!-- Portfolio Item 11 -->
-											<figure class="item" data-groups='["all","illustration"]'>
-												<a href="images/portfolio/full/11.jpg" class="lightbox" title="عنوان تصویر">
-													<img src="images/portfolio/11.jpg" alt="">
-													<div>
-														<h5 class="name">نام پروژه</h5>
-														<small>تصویر</small>
-														<i class="fa fa-image"></i>
-													</div>
-												</a>
-											</figure>
-											<!-- /Portfolio Item 11 -->
-
-											<!-- Portfolio Item 12 -->
-											<figure class="item" data-groups='["all","media"]'>
-												<a class="ajax-page-load" href="ajax/portfolio-5.html">
-													<img src="images/portfolio/12.jpg" alt="">
-													<div>
-														<h5 class="name">نام پروژه</h5>
-														<small>رسانه</small>
-														<i class="fa fa-file-text-o"></i>
-													</div>
-												</a>
-											</figure>
-											<!-- /Portfolio Item 12 -->
+											{% for portfolio in portfolios %}
+												<figure class="item" data-groups='["all","illustration"]'>
+													<a href="images/portfolio/full/3.jpg" class="lightbox" title="عنوان تصویر">
+														<img src="{{portfolio.image.url}}" alt="">
+														<div>
+															<h5 class="name">{{portfolio.name}} </h5>
+															<small>{% trans "image" %}</small>
+															<i class="fa fa-image"></i>
+														</div>
+													</a>
+												</figure>
+												{% endfor %}
+												<!-- /Portfolio Item 3 -->						
 										</div>
 										<!-- /Portfolio Grid -->
 
@@ -342,9 +245,9 @@
 									<!-- /Portfolio Content -->
 								</div>
 							</div>
-						</section> {% endcomment %}
+						</section>
 						<!-- /Portfolio Subpage -->
-						<!-- Contact Subpage -->
+						<!-- Contact Subpage --> 
 						<section class="pt-page" data-id="contact">
 							<div class="section-inner custom-page-content">
 								<div class="page-header color-1">
