@@ -227,7 +227,7 @@
 											<!-- Portfolio Item 3 -->
 											{% for portfolio in portfolios %}
 												<figure class="item" data-groups='["all","illustration"]'>
-													<a href="images/portfolio/full/3.jpg" class="lightbox" title="عنوان تصویر">
+													<a href="{{portfolio.image.url}}" class="lightbox" title="عنوان تصویر">
 														<img src="{{portfolio.image.url}}" alt="">
 														<div>
 															<h5 class="name">{{portfolio.name}} </h5>

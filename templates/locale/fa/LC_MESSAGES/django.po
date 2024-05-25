@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 18:46+0330\n"
-"PO-Revision-Date: 2024-05-08 18:47+0330\n"
+"POT-Creation-Date: 2024-05-24 00:20+0330\n"
+"PO-Revision-Date: 2024-05-24 00:20+0330\n"
 "Last-Translator: Anonymous User <anonymous@user.tld>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -35,12 +35,13 @@ msgstr "صفحه اصلی"
 msgid "Rezomeh"
 msgstr "رزومه"
 
-#: .\_base.html:56
+#: .\_base.html:52
+msgid "Portfolios"
+msgstr "نمونه کارها"
+
+#: .\_base.html:55
 msgid "call"
 msgstr "تماس"
-
-#~ msgid "Portfolios"
-#~ msgstr "نمونه کارها"
 
 #~ msgid "main color"
 #~ msgstr "رنگ اصلی"

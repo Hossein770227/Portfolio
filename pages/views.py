@@ -4,14 +4,16 @@ from django.shortcuts import render
 from django.views import generic
 from django.utils.translation import gettext as _
 
+
 from django.conf import settings
 from django.http import FileResponse
 
 
 
+
 from .forms import ReciveMessageForm
 from django.contrib import messages
-from django.contrib.auth.mixins import LoginRequiredMixin
+
 from django.contrib.messages.views import SuccessMessageMixin
 
 from .models import Skills, Portfolio
@@ -23,8 +25,9 @@ def home_page_view(request):
     return render(request,'pages/home.html',{'skills':skills,'portfolios':portfolio})
 
 
-class ReciveMessage(SuccessMessageMixin,generic.CreateView, LoginRequiredMixin):
+class ReciveMessage(SuccessMessageMixin,generic.CreateView):
     form_class = ReciveMessageForm
+    http_method_names =['POST']
     template_name = 'pages/home.html'
     success_message =_('your message successfully submit')
 
