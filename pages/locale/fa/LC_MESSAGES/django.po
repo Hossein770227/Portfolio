@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-24 00:18+0330\n"
-"PO-Revision-Date: 2024-05-24 00:19+0330\n"
+"PO-Revision-Date: 2024-05-25 14:42+0330\n"
 "Last-Translator: Anonymous User <anonymous@user.tld>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -127,7 +127,7 @@ msgstr "تلفن"
 
 #: .\templates\pages\home.html:83
 msgid "github address"
-msgstr "آدرس گیت هاب"
+msgstr "github"
 
 #: .\templates\pages\home.html:97
 msgid "rezomeh"

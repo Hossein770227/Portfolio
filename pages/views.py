@@ -27,7 +27,7 @@ def home_page_view(request):
 
 class ReciveMessage(SuccessMessageMixin,generic.CreateView):
     form_class = ReciveMessageForm
-    http_method_names =['POST']
+    http_method_names =['post']
     template_name = 'pages/home.html'
     success_message =_('your message successfully submit')
 

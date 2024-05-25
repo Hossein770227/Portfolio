@@ -30,7 +30,7 @@
 									<div class="row">
 										<div class="col-sm-3 col-md-4 col-lg-2">
 											<div class="photo">
-												<img src="{% static "images/hossein123.png" %}" alt="">
+												<img src="{% static "images/123456.png" %}"alt='photo'>
 											</div>
 										</div>
 
@@ -76,10 +76,9 @@
 											<ul class="info-list">
 												<li><span class="title">{% trans "date time birth" %}</span> <span class="value">1377</span></li>
 												<li><span class="title">{% trans "Address" %}</span> <span class="value">{% trans "kish" %}</span></li>
-												{% comment %} <li><span class="title">آدرس</span> <span class="value">خیابان نیایش، جنب پاساژ اطلس</span></li> {% endcomment %}
 												<li><span class="title">{% trans "email" %}</span> <span class="value ltr_text">hossein.h.a770227@gmail.com</span></li>
 												<li><span class="title">{% trans "phone number" %}</span> <span class="value ltr_text">09933779870</span></li>
-												<li><span class="title">{% trans "github address" %}</span> <span class="value available"><a href='https://github.com/Hossein770227'>github.com/Hossein770227</a></span></li>
+												<li><span class="title">{% trans "github address" %}</span> <span class="value available"><a href='https://github.com/Hossein770227' target="_blank">github.com/Hossein770227</a></span></li>
 											</ul>
 										</div>
 
@@ -139,14 +138,8 @@
 												<div class="block-title">
 													<h3> <span>{% trans "Skills" %}</span> {% trans "Programming" %}</h3>
 												</div>
-												<div  style ='flex'class="skills-info" dir="rtl">
-													<h4>python</h4>                               
-													<h4>Django</h4>
-													<h4>Git</h4>
-													<h4>Docker</h4>
-													<h4>html</h4>
-													<h4>css</h4>
-													<h4>TDD</h4>
+												<div  style ='d-flex'class="skills-info" dir="rtl">
+													<h4>css-html-TDD-Docker-Git-Django-python</h4>                               
 												</div>
 											</div>
 										</div>
@@ -178,52 +171,8 @@
 
 									<!-- Portfolio Content -->
 									<div class="portfolio-content">
-
-										<!-- Portfolio filter -->
-										{% comment %} <ul id="portfolio_filters" class="portfolio-filters">
-											<li class="active">
-												<a class="filter btn btn-sm btn-link active" data-group="all">همه</a>
-											</li>
-											<li>
-												<a class="filter btn btn-sm btn-link" data-group="media">رسانه</a>
-											</li>
-											<li>
-												<a class="filter btn btn-sm btn-link" data-group="illustration">تصویر</a>
-											</li>
-											<li>
-												<a class="filter btn btn-sm btn-link" data-group="video">ویدئو</a>
-											</li>
-										</ul> {% endcomment %}
-										<!-- End of Portfolio filter -->
-
 										<!-- Portfolio Grid -->
-										<div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3">
-
-											<!-- Portfolio Item 1 -->
-											{% comment %} <figure class="item" data-groups='["all", "media"]'>
-												<a class="ajax-page-load" href="ajax/portfolio-1.html">
-													<img src="images/portfolio/1.jpg" alt="">
-													<div>
-														<h5 class="name">نام پروژه</h5>
-														<small>رسانه</small>
-														<i class="fa fa-file-text-o"></i>
-													</div>
-												</a>
-											</figure> {% endcomment %}
-											<!-- /Portfolio Item 1 -->
-
-											<!-- Portfolio Item 2 -->
-											{% comment %} <figure class="item" data-groups='["all", "video"]'>
-												<a href="ajax/video-iframe.html" title="عنوان ویدئو" class="lightbox mfp-iframe">
-													<img src="images/portfolio/2.jpg" alt="">
-													<div>
-														<h5 class="name">نام پروژه</h5>
-														<small>ویدئو</small>
-														<i class="fa fa-video-camera"></i>
-													</div>
-												</a>
-											</figure> {% endcomment %}
-											<!-- /Portfolio Item 2 -->
+										<div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3">	
 											<!-- Portfolio Item 3 -->
 											{% for portfolio in portfolios %}
 												<figure class="item" data-groups='["all","illustration"]'>
@@ -296,7 +245,7 @@
 											<div class="block-title">
 												<h3><span>{% trans "call" %}</span> {% trans "with me" %} </h3>
 											</div>
-											<form method='POST'  action="{% url "pages:recive_message" %}">
+											<form method='POST' action="{% url "pages:recive_message" %}">
 												{% csrf_token %}
 												{% if form.errors %}
 													<div class='alert alert-danger'>
@@ -312,7 +261,6 @@
 														<div class="form-control-border"></div>
 														<div class="help-block with-errors"></div>
 													</div>
-
 													<div class="form-group form-group-with-icon">
 														<i class="fa fa-envelope"></i>
 														<label> {% trans "email address" %}</label>
@@ -328,12 +276,8 @@
 														<div class="form-control-border"></div>
 														<div class="help-block with-errors"></div>
 													</div>
-													
-													<!-- <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI"></div> -->
-													
 													<input type="submit" class="button btn-send" value="{% trans "send message" %}">
 												</div>
-											
 											</form>
 										</div>
 									</div>
